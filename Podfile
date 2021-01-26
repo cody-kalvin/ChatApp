@@ -11,6 +11,7 @@ target 'ChatApp' do
   pod 'Firebase/Auth', '~> 7.4.0'
   pod 'Firebase/Firestore', '~> 7.4.0'
   pod 'Firebase/Messaging', '~> 7.4.0'
+  pod 'Valet', '~> 4.1.1'
 
   target 'ChatAppTests' do
     inherit! :search_paths
