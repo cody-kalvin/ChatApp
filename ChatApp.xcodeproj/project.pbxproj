@@ -10,6 +10,11 @@
 		C94C81D426331AC317FD7EB2 /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F044600101DBD168BAB86B2E /* Pods_ChatAppTests.framework */; };
 		DEFB00E44B78462B7FEB0560 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B21DF3C842C6C2AC682854B /* Pods_ChatApp.framework */; };
 		F38D24462EFE871CF8D49282 /* Pods_ChatApp_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C542F3FCC9E3266F831CF /* Pods_ChatApp_ChatAppUITests.framework */; };
+		F95D6A4125BFC98900D3906A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6A4025BFC98900D3906A /* SignUpViewController.swift */; };
+		F95D6AB825BFEC3C00D3906A /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6AB725BFEC3C00D3906A /* DefaultTextField.swift */; };
+		F95D6ACE25C007FD00D3906A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6ACD25C007FD00D3906A /* PrimaryButton.swift */; };
+		F95D6ADB25C00DE900D3906A /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6ADA25C00DE900D3906A /* SecondaryButton.swift */; };
+		F95D6AEF25C015B100D3906A /* BDStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6AEE25C015B100D3906A /* BDStrings.swift */; };
 		F9CF73BD25BEBE40007F38F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF73BC25BEBE40007F38F5 /* AppDelegate.swift */; };
 		F9CF73BF25BEBE40007F38F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF73BE25BEBE40007F38F5 /* SceneDelegate.swift */; };
 		F9CF73C625BEBE41007F38F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CF73C525BEBE41007F38F5 /* Assets.xcassets */; };
@@ -20,6 +25,7 @@
 		F9CF741D25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
 		F9CF741E25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
 		F9CF741F25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
+		F9CF749025BED80A007F38F5 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF748F25BED80A007F38F5 /* SignUpForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		A725D6FFD8DD31B90D1B0A0D /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F044600101DBD168BAB86B2E /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F538D51AA95F3565C1804DAD /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F95D6A4025BFC98900D3906A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F95D6AB725BFEC3C00D3906A /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
+		F95D6ACD25C007FD00D3906A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F95D6ADA25C00DE900D3906A /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		F95D6AEE25C015B100D3906A /* BDStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDStrings.swift; sourceTree = "<group>"; };
 		F9CF73B925BEBE40007F38F5 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CF73BC25BEBE40007F38F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9CF73BE25BEBE40007F38F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +74,7 @@
 		F9CF73E025BEBE41007F38F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9CF73FB25BEBF51007F38F5 /* JanusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusViewController.swift; sourceTree = "<group>"; };
 		F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/Google Services JSON/ChatApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9CF748F25BED80A007F38F5 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F95D6AB625BFEC1800D3906A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F95D6AB725BFEC3C00D3906A /* DefaultTextField.swift */,
+				F95D6ACD25C007FD00D3906A /* PrimaryButton.swift */,
+				F95D6ADA25C00DE900D3906A /* SecondaryButton.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F95D6AE225C0154700D3906A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F95D6AED25C0159E00D3906A /* values */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F95D6AED25C0159E00D3906A /* values */ = {
+			isa = PBXGroup;
+			children = (
+				F95D6AEE25C015B100D3906A /* BDStrings.swift */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
 		F9CF73B025BEBE3F007F38F5 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +179,8 @@
 		F9CF73BB25BEBE40007F38F5 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				F95D6AE225C0154700D3906A /* resources */,
+				F9CF748325BED1D7007F38F5 /* ui */,
 				F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */,
 				F9CF73BC25BEBE40007F38F5 /* AppDelegate.swift */,
 				F9CF73BE25BEBE40007F38F5 /* SceneDelegate.swift */,
@@ -168,6 +208,24 @@
 				F9CF73E025BEBE41007F38F5 /* Info.plist */,
 			);
 			path = ChatAppUITests;
+			sourceTree = "<group>";
+		};
+		F9CF748325BED1D7007F38F5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F95D6AB625BFEC1800D3906A /* common */,
+				F9CF748425BED1DF007F38F5 /* signup */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F9CF748425BED1DF007F38F5 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				F9CF748F25BED80A007F38F5 /* SignUpForm.swift */,
+				F95D6A4025BFC98900D3906A /* SignUpViewController.swift */,
+			);
+			path = signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,9 +468,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CF749025BED80A007F38F5 /* SignUpForm.swift in Sources */,
+				F95D6AB825BFEC3C00D3906A /* DefaultTextField.swift in Sources */,
+				F95D6AEF25C015B100D3906A /* BDStrings.swift in Sources */,
 				F9CF73BD25BEBE40007F38F5 /* AppDelegate.swift in Sources */,
 				F9CF73BF25BEBE40007F38F5 /* SceneDelegate.swift in Sources */,
+				F95D6ADB25C00DE900D3906A /* SecondaryButton.swift in Sources */,
 				F9CF73FC25BEBF51007F38F5 /* JanusViewController.swift in Sources */,
+				F95D6A4125BFC98900D3906A /* SignUpViewController.swift in Sources */,
+				F95D6ACE25C007FD00D3906A /* PrimaryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
