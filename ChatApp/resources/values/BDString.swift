@@ -15,6 +15,10 @@ class BDString {
     
     static let displayTerms = "By signing up, you agree to the Terms of  Service and Privacy Policy, including Cookie Use. Others will be able to find you by searching for your email address and phone number when provided."
     
+    static let credentialsIdentifier = "Druidia"
+    
+    static let credentialsToken = "token"
+    
     static let invalidValue = "Invalid value"
     
     static let unknownError = "Unknown error"
