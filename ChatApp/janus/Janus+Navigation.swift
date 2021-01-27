@@ -17,10 +17,10 @@ extension Janus {
     }
     
     func gotoLogin() {
-        
+        print("Redirecting to Login Screen")
     }
     
     func gotoRoom() {
-        
+        print("Redirecting to Chat Room")
     }
 }
