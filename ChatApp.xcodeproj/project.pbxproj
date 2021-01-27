@@ -10,6 +10,15 @@
 		C94C81D426331AC317FD7EB2 /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F044600101DBD168BAB86B2E /* Pods_ChatAppTests.framework */; };
 		DEFB00E44B78462B7FEB0560 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B21DF3C842C6C2AC682854B /* Pods_ChatApp.framework */; };
 		F38D24462EFE871CF8D49282 /* Pods_ChatApp_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C542F3FCC9E3266F831CF /* Pods_ChatApp_ChatAppUITests.framework */; };
+		F91D0A4725C14FD200210EB3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A4625C14FD200210EB3 /* Observable.swift */; };
+		F91D0A4C25C1544700210EB3 /* SignUpViewController+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A4B25C1544700210EB3 /* SignUpViewController+Observer.swift */; };
+		F91D0A5525C15D8F00210EB3 /* String+FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */; };
+		F91D0A5A25C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5925C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift */; };
+		F91D0A6025C1687600210EB3 /* SignUpResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5F25C1687600210EB3 /* SignUpResult.swift */; };
+		F9453A5425C139C800C2C4A7 /* SignupViewController+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */; };
+		F9453A5C25C13F8200C2C4A7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */; };
+		F9453A6225C1476700C2C4A7 /* Janus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A6125C1476700C2C4A7 /* Janus.swift */; };
+		F9453A6D25C1480700C2C4A7 /* Janus+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A6C25C1480700C2C4A7 /* Janus+Navigation.swift */; };
 		F95D6A4125BFC98900D3906A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6A4025BFC98900D3906A /* SignUpViewController.swift */; };
 		F95D6AB825BFEC3C00D3906A /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6AB725BFEC3C00D3906A /* DefaultTextField.swift */; };
 		F95D6ACE25C007FD00D3906A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D6ACD25C007FD00D3906A /* PrimaryButton.swift */; };
@@ -21,11 +30,10 @@
 		F9CF73C925BEBE41007F38F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CF73C725BEBE41007F38F5 /* LaunchScreen.storyboard */; };
 		F9CF73D425BEBE41007F38F5 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF73D325BEBE41007F38F5 /* ChatAppTests.swift */; };
 		F9CF73DF25BEBE41007F38F5 /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF73DE25BEBE41007F38F5 /* ChatAppUITests.swift */; };
-		F9CF73FC25BEBF51007F38F5 /* JanusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF73FB25BEBF51007F38F5 /* JanusViewController.swift */; };
 		F9CF741D25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
 		F9CF741E25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
 		F9CF741F25BECB88007F38F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */; };
-		F9CF749025BED80A007F38F5 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF748F25BED80A007F38F5 /* SignUpForm.swift */; };
+		F9CF749025BED80A007F38F5 /* SignUpViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF748F25BED80A007F38F5 /* SignUpViewController+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,15 @@
 		A725D6FFD8DD31B90D1B0A0D /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F044600101DBD168BAB86B2E /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F538D51AA95F3565C1804DAD /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F91D0A4625C14FD200210EB3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		F91D0A4B25C1544700210EB3 /* SignUpViewController+Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+Observer.swift"; sourceTree = "<group>"; };
+		F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FormValidation.swift"; sourceTree = "<group>"; };
+		F91D0A5925C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Janus+SignUpViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		F91D0A5F25C1687600210EB3 /* SignUpResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResult.swift; sourceTree = "<group>"; };
+		F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignupViewController+Interaction.swift"; sourceTree = "<group>"; };
+		F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F9453A6125C1476700C2C4A7 /* Janus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Janus.swift; sourceTree = "<group>"; };
+		F9453A6C25C1480700C2C4A7 /* Janus+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Janus+Navigation.swift"; sourceTree = "<group>"; };
 		F95D6A4025BFC98900D3906A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F95D6AB725BFEC3C00D3906A /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
 		F95D6ACD25C007FD00D3906A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -72,9 +89,8 @@
 		F9CF73DA25BEBE41007F38F5 /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CF73DE25BEBE41007F38F5 /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		F9CF73E025BEBE41007F38F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9CF73FB25BEBF51007F38F5 /* JanusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusViewController.swift; sourceTree = "<group>"; };
 		F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/Google Services JSON/ChatApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F9CF748F25BED80A007F38F5 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
+		F9CF748F25BED80A007F38F5 /* SignUpViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F91D0A4425C14FB900210EB3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F91D0A5E25C1686500210EB3 /* signup */,
+				F91D0A4525C14FC400210EB3 /* common */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		F91D0A4525C14FC400210EB3 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F91D0A4625C14FD200210EB3 /* Observable.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F91D0A5325C15D3E00210EB3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F91D0A5E25C1686500210EB3 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				F91D0A5F25C1687600210EB3 /* SignUpResult.swift */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		F9453A6025C1471300C2C4A7 /* janus */ = {
+			isa = PBXGroup;
+			children = (
+				F9453A6125C1476700C2C4A7 /* Janus.swift */,
+				F9453A6C25C1480700C2C4A7 /* Janus+Navigation.swift */,
+				F91D0A5925C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift */,
+			);
+			path = janus;
+			sourceTree = "<group>";
+		};
 		F95D6AB625BFEC1800D3906A /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +238,9 @@
 		F9CF73BB25BEBE40007F38F5 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				F91D0A5325C15D3E00210EB3 /* util */,
+				F91D0A4425C14FB900210EB3 /* data */,
+				F9453A6025C1471300C2C4A7 /* janus */,
 				F95D6AE225C0154700D3906A /* resources */,
 				F9CF748325BED1D7007F38F5 /* ui */,
 				F9CF741C25BECB88007F38F5 /* GoogleService-Info.plist */,
@@ -187,7 +249,6 @@
 				F9CF73C525BEBE41007F38F5 /* Assets.xcassets */,
 				F9CF73C725BEBE41007F38F5 /* LaunchScreen.storyboard */,
 				F9CF73CA25BEBE41007F38F5 /* Info.plist */,
-				F9CF73FB25BEBF51007F38F5 /* JanusViewController.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -222,8 +283,11 @@
 		F9CF748425BED1DF007F38F5 /* signup */ = {
 			isa = PBXGroup;
 			children = (
-				F9CF748F25BED80A007F38F5 /* SignUpForm.swift */,
+				F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */,
 				F95D6A4025BFC98900D3906A /* SignUpViewController.swift */,
+				F9CF748F25BED80A007F38F5 /* SignUpViewController+View.swift */,
+				F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */,
+				F91D0A4B25C1544700210EB3 /* SignUpViewController+Observer.swift */,
 			);
 			path = signup;
 			sourceTree = "<group>";
@@ -296,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					F9CF73B825BEBE40007F38F5 = {
 						CreatedOnToolsVersion = 12.3;
@@ -468,15 +532,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CF749025BED80A007F38F5 /* SignUpForm.swift in Sources */,
+				F91D0A4725C14FD200210EB3 /* Observable.swift in Sources */,
+				F9CF749025BED80A007F38F5 /* SignUpViewController+View.swift in Sources */,
+				F9453A6225C1476700C2C4A7 /* Janus.swift in Sources */,
 				F95D6AB825BFEC3C00D3906A /* DefaultTextField.swift in Sources */,
 				F95D6AEF25C015B100D3906A /* BDString.swift in Sources */,
+				F9453A5425C139C800C2C4A7 /* SignupViewController+Interaction.swift in Sources */,
 				F9CF73BD25BEBE40007F38F5 /* AppDelegate.swift in Sources */,
 				F9CF73BF25BEBE40007F38F5 /* SceneDelegate.swift in Sources */,
 				F95D6ADB25C00DE900D3906A /* SecondaryButton.swift in Sources */,
-				F9CF73FC25BEBF51007F38F5 /* JanusViewController.swift in Sources */,
+				F91D0A5525C15D8F00210EB3 /* String+FormValidation.swift in Sources */,
+				F9453A6D25C1480700C2C4A7 /* Janus+Navigation.swift in Sources */,
 				F95D6A4125BFC98900D3906A /* SignUpViewController.swift in Sources */,
+				F9453A5C25C13F8200C2C4A7 /* SignUpViewModel.swift in Sources */,
+				F91D0A4C25C1544700210EB3 /* SignUpViewController+Observer.swift in Sources */,
 				F95D6ACE25C007FD00D3906A /* PrimaryButton.swift in Sources */,
+				F91D0A6025C1687600210EB3 /* SignUpResult.swift in Sources */,
+				F91D0A5A25C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

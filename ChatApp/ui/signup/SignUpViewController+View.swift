@@ -8,40 +8,9 @@
 import UIKit
 import SnapKit
 
-class SignUpForm: UIView {
+extension SignUpViewController {
     
-    private lazy var scrollView = UIScrollView()
-    
-    private lazy var contentView = UIView()
-    
-    private lazy var inputEmail = DefaultTextField()
-    
-    private lazy var errorEmail = UILabel()
-    
-    private lazy var inputPassword = DefaultTextField()
-    
-    private lazy var errorPassword = UILabel()
-    
-    private lazy var actionSignUp = PrimaryButton(title: BDString.actionSignUp)
-    
-    private lazy var actionLogin = SecondaryButton(title: BDString.actionLogin)
-    
-    private lazy var textTerms = UITextView()
-    
-    init() {
-        super.init(frame: .zero)
-        setupSubviews()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init?(coder:) has not been implemented")
-    }
-    
-    private func setupSubviews() {
+    func setupSubviews() {
         setupScrollView()
         setupContentView()
         setupInputEmail()
@@ -51,14 +20,15 @@ class SignUpForm: UIView {
         setupActionSignUp()
         setupActionLogin()
         setupTextTerms()
+        setupActivityIndicator()
     }
     
     private func setupScrollView() {
-        self.addSubview(scrollView)
+        view.addSubview(scrollView)
         
         scrollView.snp.makeConstraints { (make) in
-            make.top.left.right.equalTo(self)
-            make.bottom.greaterThanOrEqualTo(self)
+            make.top.left.right.equalTo(view)
+            make.bottom.greaterThanOrEqualTo(view)
         }
     }
     
@@ -67,7 +37,7 @@ class SignUpForm: UIView {
         
         contentView.backgroundColor = .white
         contentView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self)
+            make.left.right.equalTo(view)
             make.width.height.top.bottom.equalTo(scrollView)
         }
     }
@@ -155,6 +125,14 @@ class SignUpForm: UIView {
             make.right.equalTo(contentView).offset(-10.0)
             make.bottom.lessThanOrEqualTo(contentView).offset(-40.0)
             make.height.equalTo(100.0)
+        }
+    }
+    
+    private func setupActivityIndicator() {
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.snp.makeConstraints { (make) in
+            make.center.equalTo(view.snp.center)
         }
     }
 }
