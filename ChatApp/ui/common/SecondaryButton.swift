@@ -42,12 +42,4 @@ class SecondaryButton: UIButton {
         let attributedString = NSMutableAttributedString(string: title, attributes: attributes)
         setAttributedTitle(attributedString, for: .normal)
     }
-    
-    func setEnabled(_ flag: Bool) {
-        isEnabled = flag
-        
-        if isEnabled {
-            setupLayout()
-        }
-    }
 }

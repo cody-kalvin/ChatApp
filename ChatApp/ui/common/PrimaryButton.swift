@@ -37,12 +37,4 @@ class PrimaryButton: UIButton {
         tintColor = .white
         layer.cornerRadius = 8.0
     }
-    
-    func setEnabled(_ flag: Bool) {
-        isEnabled = flag
-        
-        if isEnabled {
-            setupLayout()
-        }
-    }
 }
