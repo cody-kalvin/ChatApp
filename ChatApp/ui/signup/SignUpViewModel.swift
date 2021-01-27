@@ -45,25 +45,25 @@ class SignUpViewModel {
     func signUp() {
         result.value = .loading
         
-        let email = self.email.value ?? ""
-        let password = self.password.value ?? ""
-        Auth.auth().createUser(withEmail: email!, password: password!) { (authResult, error) in
-            if let error = error {
-                let code = AuthErrorCode(rawValue: error._code)
-                switch code {
-                case .invalidEmail:
-                    self.result.value = .error(message: BDString.invalidEmail)
-                case .emailAlreadyInUse:
-                    self.result.value = .error(message: BDString.duplicateEmail)
-                case .operationNotAllowed:
-                    self.result.value = .error(message: BDString.operationNotAllowed)
-                case .weakPassword:
-                    self.result.value = .error(message: BDString.weakPassword)
-                default:
-                    self.result.value = .error(message: BDString.unknownError)
+        if let email = self.email.value ?? "", let password = self.password.value ?? "" {
+            Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+                if let error = error {
+                    let code = AuthErrorCode(rawValue: error._code)
+                    switch code {
+                    case .invalidEmail:
+                        self.result.value = .error(message: BDString.invalidEmail)
+                    case .emailAlreadyInUse:
+                        self.result.value = .error(message: BDString.duplicateEmail)
+                    case .operationNotAllowed:
+                        self.result.value = .error(message: BDString.operationNotAllowed)
+                    case .weakPassword:
+                        self.result.value = .error(message: BDString.weakPassword)
+                    default:
+                        self.result.value = .error(message: BDString.unknownError)
+                    }
+                } else {
+                    self.checkUser()
                 }
-            } else {
-                self.checkUser()
             }
         }
     }
