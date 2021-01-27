@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BDStrings {
+class BDString {
     
     static let actionSignUp = "Sign Up"
     
