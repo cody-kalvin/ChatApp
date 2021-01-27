@@ -15,7 +15,7 @@
 		F91D0A5525C15D8F00210EB3 /* String+FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */; };
 		F91D0A5A25C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5925C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift */; };
 		F91D0A6025C1687600210EB3 /* SignUpResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0A5F25C1687600210EB3 /* SignUpResult.swift */; };
-		F9453A5425C139C800C2C4A7 /* SignupViewController+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */; };
+		F9453A5425C139C800C2C4A7 /* SignUpViewController+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A5325C139C800C2C4A7 /* SignUpViewController+Interaction.swift */; };
 		F9453A5C25C13F8200C2C4A7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */; };
 		F9453A6225C1476700C2C4A7 /* Janus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A6125C1476700C2C4A7 /* Janus.swift */; };
 		F9453A6D25C1480700C2C4A7 /* Janus+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9453A6C25C1480700C2C4A7 /* Janus+Navigation.swift */; };
@@ -68,7 +68,7 @@
 		F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FormValidation.swift"; sourceTree = "<group>"; };
 		F91D0A5925C166A100210EB3 /* Janus+SignUpViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Janus+SignUpViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		F91D0A5F25C1687600210EB3 /* SignUpResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResult.swift; sourceTree = "<group>"; };
-		F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignupViewController+Interaction.swift"; sourceTree = "<group>"; };
+		F9453A5325C139C800C2C4A7 /* SignUpViewController+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+Interaction.swift"; sourceTree = "<group>"; };
 		F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F9453A6125C1476700C2C4A7 /* Janus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Janus.swift; sourceTree = "<group>"; };
 		F9453A6C25C1480700C2C4A7 /* Janus+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Janus+Navigation.swift"; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 				F9453A5B25C13F8200C2C4A7 /* SignUpViewModel.swift */,
 				F95D6A4025BFC98900D3906A /* SignUpViewController.swift */,
 				F9CF748F25BED80A007F38F5 /* SignUpViewController+View.swift */,
-				F9453A5325C139C800C2C4A7 /* SignupViewController+Interaction.swift */,
+				F9453A5325C139C800C2C4A7 /* SignUpViewController+Interaction.swift */,
 				F91D0A4B25C1544700210EB3 /* SignUpViewController+Observer.swift */,
 			);
 			path = signup;
@@ -537,7 +537,7 @@
 				F9453A6225C1476700C2C4A7 /* Janus.swift in Sources */,
 				F95D6AB825BFEC3C00D3906A /* DefaultTextField.swift in Sources */,
 				F95D6AEF25C015B100D3906A /* BDString.swift in Sources */,
-				F9453A5425C139C800C2C4A7 /* SignupViewController+Interaction.swift in Sources */,
+				F9453A5425C139C800C2C4A7 /* SignUpViewController+Interaction.swift in Sources */,
 				F9CF73BD25BEBE40007F38F5 /* AppDelegate.swift in Sources */,
 				F9CF73BF25BEBE40007F38F5 /* SceneDelegate.swift in Sources */,
 				F95D6ADB25C00DE900D3906A /* SecondaryButton.swift in Sources */,
