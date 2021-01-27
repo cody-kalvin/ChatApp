@@ -22,9 +22,9 @@ class SignUpForm: UIView {
     
     private lazy var errorPassword = UILabel()
     
-    private lazy var actionSignUp = PrimaryButton(title: BDStrings.actionSignUp)
+    private lazy var actionSignUp = PrimaryButton(title: BDString.actionSignUp)
     
-    private lazy var actionLogin = SecondaryButton(title: BDStrings.actionLogin)
+    private lazy var actionLogin = SecondaryButton(title: BDString.actionLogin)
     
     private lazy var textTerms = UITextView()
     
@@ -146,7 +146,7 @@ class SignUpForm: UIView {
     private func setupTextTerms() {
         contentView.addSubview(textTerms)
         
-        textTerms.text = BDStrings.displayTerms
+        textTerms.text = BDString.displayTerms
         textTerms.isEditable = false
         textTerms.snp.makeConstraints { (make) in
             make.top.equalTo(actionLogin.snp.bottom).offset(10.0)
