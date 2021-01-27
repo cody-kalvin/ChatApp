@@ -57,7 +57,8 @@ class SignUpForm: UIView {
         self.addSubview(scrollView)
         
         scrollView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self)
+            make.top.left.right.equalTo(self)
+            make.bottom.greaterThanOrEqualTo(self)
         }
     }
     
