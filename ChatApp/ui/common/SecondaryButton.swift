@@ -35,7 +35,7 @@ class SecondaryButton: UIButton {
         layer.borderWidth = 0.0
         
         let attributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.boldSystemFont(ofSize: 16),
+            .font: UIFont.boldSystemFont(ofSize: 16.0),
             .foregroundColor: UIColor.black,
             .underlineStyle: NSUnderlineStyle.single.rawValue
         ]

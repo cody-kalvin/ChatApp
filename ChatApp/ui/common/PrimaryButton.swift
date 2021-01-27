@@ -32,7 +32,7 @@ class PrimaryButton: UIButton {
     private func setupLayout() {
         setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)
-        titleLabel?.font = .boldSystemFont(ofSize: 20)
+        titleLabel?.font = .boldSystemFont(ofSize: 20.0)
         backgroundColor = .blue
         tintColor = .white
         layer.cornerRadius = 8.0
