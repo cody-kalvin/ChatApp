@@ -14,9 +14,9 @@ class SignUpForm: UIView {
     
     private lazy var contentView = UIView()
     
-    private lazy var inputUsername = DefaultTextField()
+    private lazy var inputEmail = DefaultTextField()
     
-    private lazy var errorUsername = UILabel()
+    private lazy var errorEmail = UILabel()
     
     private lazy var inputPassword = DefaultTextField()
     
@@ -44,8 +44,8 @@ class SignUpForm: UIView {
     private func setupSubviews() {
         setupScrollView()
         setupContentView()
-        setupInputUsername()
-        setupErrorUsername()
+        setupInputEmail()
+        setupErrorEmail()
         setupInputPassword()
         setupErrorPassword()
         setupActionSignUp()
@@ -72,27 +72,27 @@ class SignUpForm: UIView {
         }
     }
     
-    private func setupInputUsername() {
-        contentView.addSubview(inputUsername)
+    private func setupInputEmail() {
+        contentView.addSubview(inputEmail)
         
-        inputUsername.placeholder = "Username"
-        inputUsername.keyboardType = .default
-        inputUsername.returnKeyType = .next
-        inputUsername.snp.makeConstraints { (make) in
+        inputEmail.placeholder = "Email"
+        inputEmail.keyboardType = .emailAddress
+        inputEmail.returnKeyType = .next
+        inputEmail.snp.makeConstraints { (make) in
             make.top.equalTo(contentView).offset(40.0)
             make.left.equalTo(contentView).offset(10.0)
             make.right.equalTo(contentView).offset(-10.0)
         }
     }
     
-    private func setupErrorUsername() {
-        contentView.addSubview(errorUsername)
+    private func setupErrorEmail() {
+        contentView.addSubview(errorEmail)
         
-        errorUsername.font = .systemFont(ofSize: 16)
-        errorUsername.textColor = .red
-        errorUsername.snp.makeConstraints { (make) in
-            make.top.equalTo(inputUsername.snp.bottom).offset(10.0)
-            make.left.right.equalTo(inputUsername)
+        errorEmail.font = .systemFont(ofSize: 16)
+        errorEmail.textColor = .red
+        errorEmail.snp.makeConstraints { (make) in
+            make.top.equalTo(inputEmail.snp.bottom).offset(10.0)
+            make.left.right.equalTo(inputEmail)
         }
     }
     
@@ -104,7 +104,7 @@ class SignUpForm: UIView {
         inputPassword.isSecureTextEntry = true
         inputPassword.returnKeyType = .done
         inputPassword.snp.makeConstraints { (make) in
-            make.top.equalTo(errorUsername.snp.bottom).offset(10.0)
+            make.top.equalTo(errorEmail.snp.bottom).offset(10.0)
             make.left.equalTo(contentView).offset(10.0)
             make.right.equalTo(contentView).offset(-10.0)
         }
@@ -113,7 +113,7 @@ class SignUpForm: UIView {
     private func setupErrorPassword() {
         contentView.addSubview(errorPassword)
         
-        errorUsername.font = .systemFont(ofSize: 16)
+        errorEmail.font = .systemFont(ofSize: 16)
         errorPassword.textColor = .red
         errorPassword.snp.makeConstraints { (make) in
             make.top.equalTo(inputPassword.snp.bottom).offset(10.0)
