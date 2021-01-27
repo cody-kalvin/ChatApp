@@ -26,6 +26,7 @@ class DefaultTextField: UITextField {
     
     private func setupLayout() {
         autocapitalizationType = .none
+        autocorrectionType = .no
         backgroundColor = nil
         borderStyle = .roundedRect
         layer.cornerRadius = 8.0
