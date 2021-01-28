@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SignUpResult {
+enum SignUpState {
     case initial
     case loading
     case success

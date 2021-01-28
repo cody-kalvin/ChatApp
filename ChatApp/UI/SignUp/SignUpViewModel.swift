@@ -19,7 +19,7 @@ class SignUpViewModel {
 
     var form: Observable<SignUpForm?>
 
-    var result: Observable<SignUpResult>
+    var result: Observable<SignUpState>
 
     private var listener: AuthStateDidChangeListenerHandle?
 
