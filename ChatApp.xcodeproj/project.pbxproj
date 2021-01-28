@@ -161,12 +161,12 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		F91D0A5325C15D3E00210EB3 /* Helper */ = {
+		F91D0A5325C15D3E00210EB3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				F91D0A5425C15D8F00210EB3 /* String+FormValidation.swift */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F91D0A5E25C1686500210EB3 /* SignUp */ = {
@@ -238,7 +238,7 @@
 		F9CF73BB25BEBE40007F38F5 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				F91D0A5325C15D3E00210EB3 /* Helper */,
+				F91D0A5325C15D3E00210EB3 /* Helpers */,
 				F91D0A4425C14FB900210EB3 /* Data */,
 				F9453A6025C1471300C2C4A7 /* ApplicationCoordinator */,
 				F95D6AE225C0154700D3906A /* Resources */,
