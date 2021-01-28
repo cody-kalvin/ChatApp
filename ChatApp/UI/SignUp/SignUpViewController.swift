@@ -28,9 +28,9 @@ class SignUpViewController: UIViewController {
     
     lazy var errorPassword = UILabel()
     
-    lazy var actionSignUp = PrimaryButton(title: BDString.actionSignUp)
+    lazy var actionSignUp = PrimaryButton(title: KString.actionSignUp)
     
-    lazy var actionLogin = SecondaryButton(title: BDString.actionLogin)
+    lazy var actionLogin = SecondaryButton(title: KString.actionLogin)
     
     lazy var textTerms = UITextView()
     

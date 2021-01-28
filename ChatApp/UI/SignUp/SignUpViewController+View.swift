@@ -117,7 +117,7 @@ extension SignUpViewController {
     private func setupTextTerms() {
         contentView.addSubview(textTerms)
         
-        textTerms.text = BDString.displayTerms
+        textTerms.text = KString.displayTerms
         textTerms.isEditable = false
         textTerms.snp.makeConstraints { (make) in
             make.top.equalTo(actionLogin.snp.bottom).offset(10.0)

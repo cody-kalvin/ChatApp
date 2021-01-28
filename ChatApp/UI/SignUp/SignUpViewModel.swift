@@ -51,15 +51,15 @@ class SignUpViewModel {
                     let code = AuthErrorCode(rawValue: error._code)
                     switch code {
                     case .invalidEmail:
-                        self.result.value = .error(message: BDString.invalidEmail)
+                        self.result.value = .error(message: KString.invalidEmail)
                     case .emailAlreadyInUse:
-                        self.result.value = .error(message: BDString.duplicateEmail)
+                        self.result.value = .error(message: KString.duplicateEmail)
                     case .operationNotAllowed:
-                        self.result.value = .error(message: BDString.operationNotAllowed)
+                        self.result.value = .error(message: KString.operationNotAllowed)
                     case .weakPassword:
-                        self.result.value = .error(message: BDString.weakPassword)
+                        self.result.value = .error(message: KString.weakPassword)
                     default:
-                        self.result.value = .error(message: BDString.unknownError)
+                        self.result.value = .error(message: KString.unknownError)
                     }
                 } else {
                     self.checkUser()
@@ -73,7 +73,7 @@ class SignUpViewModel {
             if let user = user {
                 self.retrieveToken(of: user)
             } else {
-                self.result.value = .error(message: BDString.userNotLoggedIn)
+                self.result.value = .error(message: KString.userNotLoggedIn)
             }
         }
     }
@@ -84,14 +84,14 @@ class SignUpViewModel {
                 self.saveToken(token)
                 self.result.value = .success
             } else {
-                self.result.value = .error(message: BDString.tokenError)
+                self.result.value = .error(message: KString.tokenError)
             }
         }
     }
     
     private func saveToken(_ token: String) {
-        let valet = Valet.valet(with: Identifier(nonEmpty: BDString.credentialsIdentifier)!, accessibility: .whenUnlocked)
-        try? valet.setString(token, forKey: BDString.credentialsToken)
+        let valet = Valet.valet(with: Identifier(nonEmpty: KString.credentialsIdentifier)!, accessibility: .whenUnlocked)
+        try? valet.setString(token, forKey: KString.credentialsToken)
     }
     
     deinit {

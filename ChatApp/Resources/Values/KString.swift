@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BDString {
+struct KString {
     
     static let actionSignUp = "Sign Up"
     

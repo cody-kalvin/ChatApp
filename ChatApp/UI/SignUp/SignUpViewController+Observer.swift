@@ -22,13 +22,13 @@ extension SignUpViewController {
             let password = form.password ?? ""
             
             if !email.isValidEmail() {
-                self.errorEmail.text = BDString.invalidValue
+                self.errorEmail.text = KString.invalidValue
             } else {
                 self.errorEmail.text = ""
             }
             
             if !password.isValidPassword() {
-                self.errorPassword.text = BDString.invalidValue
+                self.errorPassword.text = KString.invalidValue
             } else {
                 self.errorPassword.text = ""
             }
