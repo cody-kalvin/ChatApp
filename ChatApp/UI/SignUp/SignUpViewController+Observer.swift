@@ -48,7 +48,7 @@ extension SignUpViewController {
                 self.activityIndicator.stopAnimating()
             case .loading:
                 self.activityIndicator.startAnimating()
-            case .success:
+            case .success(result: _):
                 self.activityIndicator.stopAnimating()
                 self.delegate?.signUpViewControllerHasSuccessfulSignUp(self)
             case .error(message: let message):

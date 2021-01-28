@@ -19,7 +19,7 @@ class SignUpViewModel {
 
     var form: Observable<SignUpForm?>
 
-    var result: Observable<SignUpState>
+    var result: Observable<RequestState<User>>
 
     private var listener: AuthStateDidChangeListenerHandle?
 
@@ -87,7 +87,7 @@ class SignUpViewModel {
             guard let self = self else { return }
             if let token = token {
                 self.saveToken(token)
-                self.result.value = .success
+                self.result.value = .success(result: user)
             } else {
                 self.result.value = .error(message: KString.tokenError)
             }

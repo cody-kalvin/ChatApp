@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum SignUpState {
+enum RequestState<T> {
     case initial
     case loading
-    case success
+    case success(result: T)
     case error(message: String)
 }
