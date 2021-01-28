@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 extension SignUpViewController {
-    
+
     func setupSubviews() {
         setupScrollView()
         setupContentView()
@@ -22,29 +22,29 @@ extension SignUpViewController {
         setupTextTerms()
         setupActivityIndicator()
     }
-    
+
     private func setupScrollView() {
         view.addSubview(scrollView)
-        
+
         scrollView.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(view)
             make.bottom.greaterThanOrEqualTo(view)
         }
     }
-    
+
     private func setupContentView() {
         scrollView.addSubview(contentView)
-        
+
         contentView.backgroundColor = .white
         contentView.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
             make.width.height.top.bottom.equalTo(scrollView)
         }
     }
-    
+
     private func setupInputEmail() {
         contentView.addSubview(inputEmail)
-        
+
         inputEmail.placeholder = "Email"
         inputEmail.keyboardType = .emailAddress
         inputEmail.returnKeyType = .next
@@ -54,10 +54,10 @@ extension SignUpViewController {
             make.right.equalTo(contentView).offset(-10.0)
         }
     }
-    
+
     private func setupErrorEmail() {
         contentView.addSubview(errorEmail)
-        
+
         errorEmail.font = .systemFont(ofSize: 16)
         errorEmail.textColor = .red
         errorEmail.snp.makeConstraints { (make) in
@@ -65,10 +65,10 @@ extension SignUpViewController {
             make.left.right.equalTo(inputEmail)
         }
     }
-    
+
     private func setupInputPassword() {
         contentView.addSubview(inputPassword)
-        
+
         inputPassword.placeholder = "Password"
         inputPassword.keyboardType = .default
         inputPassword.isSecureTextEntry = true
@@ -79,10 +79,10 @@ extension SignUpViewController {
             make.right.equalTo(contentView).offset(-10.0)
         }
     }
-    
+
     private func setupErrorPassword() {
         contentView.addSubview(errorPassword)
-        
+
         errorEmail.font = .systemFont(ofSize: 16)
         errorPassword.textColor = .red
         errorPassword.snp.makeConstraints { (make) in
@@ -90,10 +90,10 @@ extension SignUpViewController {
             make.left.right.equalTo(inputPassword)
         }
     }
-    
+
     private func setupActionSignUp() {
         contentView.addSubview(actionSignUp)
-        
+
         actionSignUp.snp.makeConstraints { (make) in
             make.top.equalTo(errorPassword.snp.bottom).offset(20.0)
             make.left.equalTo(contentView).offset(10.0)
@@ -101,10 +101,10 @@ extension SignUpViewController {
             make.height.equalTo(50.0)
         }
     }
-    
+
     private func setupActionLogin() {
         contentView.addSubview(actionLogin)
-        
+
         actionLogin.snp.makeConstraints { (make) in
             make.top.equalTo(actionSignUp.snp.bottom).offset(10.0)
             make.centerX.equalTo(contentView)
@@ -113,10 +113,10 @@ extension SignUpViewController {
             make.height.equalTo(50.0)
         }
     }
-    
+
     private func setupTextTerms() {
         contentView.addSubview(textTerms)
-        
+
         textTerms.text = KString.displayTerms
         textTerms.isEditable = false
         textTerms.snp.makeConstraints { (make) in
@@ -127,10 +127,10 @@ extension SignUpViewController {
             make.height.equalTo(100.0)
         }
     }
-    
+
     private func setupActivityIndicator() {
         view.addSubview(activityIndicator)
-        
+
         activityIndicator.snp.makeConstraints { (make) in
             make.center.equalTo(view.snp.center)
         }
