@@ -38,7 +38,7 @@ extension SignUpViewController {
         contentView.backgroundColor = .white
         contentView.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
-            make.width.height.top.bottom.equalTo(scrollView)
+            make.top.bottom.equalTo(scrollView)
         }
     }
 
