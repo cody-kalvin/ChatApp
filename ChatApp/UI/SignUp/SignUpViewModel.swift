@@ -78,6 +78,7 @@ class SignUpViewModel {
             } else {
                 self.result.value = .error(message: KString.userNotLoggedIn)
             }
+            self.removeListener()
         }
     }
 
@@ -98,7 +99,7 @@ class SignUpViewModel {
         try? valet.setString(token, forKey: KString.credentialsToken)
     }
 
-    deinit {
+    private func removeListener() {
         if let listener = listener {
             Auth.auth().removeStateDidChangeListener(listener)
         }
