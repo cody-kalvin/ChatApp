@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ApplicationCoordinator.swift
 //  ChatApp
 //
 //  Created by Kalvin Dela Raga on 1/27/21.
@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class Janus {
+class ApplicationCoordinator {
     
     let window: UIWindow
     

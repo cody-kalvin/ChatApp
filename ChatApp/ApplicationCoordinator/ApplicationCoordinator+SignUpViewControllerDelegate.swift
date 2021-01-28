@@ -1,5 +1,5 @@
 //
-//  Janus+SignUpViewControllerDelegate.swift
+//  ApplicationCoordinator+SignUpViewControllerDelegate.swift
 //  ChatApp
 //
 //  Created by Kalvin Dela Raga on 1/27/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension Janus: SignUpViewControllerDelegate {
+extension ApplicationCoordinator: SignUpViewControllerDelegate {
     
     func signUpViewControllerHasSuccessfulSignUp(_ viewController: SignUpViewController) {
         gotoRoom()

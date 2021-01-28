@@ -1,5 +1,5 @@
 //
-//  Janus+Doors.swift
+//  ApplicationCoordinator+Navigation.swift
 //  ChatApp
 //
 //  Created by Kalvin Dela Raga on 1/27/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension Janus {
+extension ApplicationCoordinator {
     
     func gotoSignUp() {
         let viewModel = SignUpViewModel()

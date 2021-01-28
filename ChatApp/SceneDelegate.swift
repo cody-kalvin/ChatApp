@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         
         guard let window = self.window else { return }
-        let janus = Janus(window: window)
-        janus.start()
+        let applicationCoordinator = ApplicationCoordinator(window: window)
+        applicationCoordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

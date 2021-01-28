@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13.0, *) {
             
         } else if let window = self.window {
-            let janus = Janus(window: window)
-            janus.start()
+            let applicationCoordinator = ApplicationCoordinator(window: window)
+            applicationCoordinator.start()
         }
         
         return true
