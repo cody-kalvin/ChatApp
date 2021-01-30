@@ -11,6 +11,7 @@ target 'ChatApp' do
   pod 'Firebase/Auth', '~> 7.4.0'
   pod 'Firebase/Firestore', '~> 7.4.0'
   pod 'Firebase/Messaging', '~> 7.4.0'
+  pod 'Valet', '~> 4.1.1'
 
   target 'ChatAppTests' do
     inherit! :search_paths
@@ -20,5 +21,12 @@ target 'ChatApp' do
   target 'ChatAppUITests' do
     # Pods for testing
   end
+end
 
+post_install do |pi|
+  pi.pods_project.targets.each do |t|
+    t.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
+  end
 end

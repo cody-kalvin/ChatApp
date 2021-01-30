@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,12 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        FirebaseApp.configure()
+
         if #available(iOS 13.0, *) {
 
-        } else {
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = JanusViewController()
-            self.window?.makeKeyAndVisible()
+        } else if let window = self.window {
+            let applicationCoordinator = ApplicationCoordinator(window: window)
+            applicationCoordinator.start()
         }
 
         return true
