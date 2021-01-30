@@ -35,7 +35,6 @@ extension SignUpViewController {
     private func setupContentView() {
         scrollView.addSubview(contentView)
 
-        contentView.backgroundColor = .white
         contentView.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
             make.top.bottom.equalTo(scrollView)
