@@ -51,9 +51,9 @@ extension SignUpViewController {
             case .success(result: _):
                 self.activityIndicator.stopAnimating()
                 self.delegate?.signUpViewControllerHasSuccessfulSignUp(self)
-            case .error(message: let message):
+            case .failure(error: let error):
                 self.activityIndicator.stopAnimating()
-                self.errorPassword.text = message
+                self.errorPassword.text = error
             }
         }
     }

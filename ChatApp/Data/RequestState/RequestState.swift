@@ -11,5 +11,5 @@ enum RequestState<T> {
     case initial
     case loading
     case success(result: T)
-    case error(message: String)
+    case failure(error: String)
 }

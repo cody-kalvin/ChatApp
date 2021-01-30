@@ -53,15 +53,15 @@ class SignUpViewModel {
                     let code = AuthErrorCode(rawValue: error._code)
                     switch code {
                     case .invalidEmail:
-                        self.result.value = .error(message: KString.invalidEmail)
+                        self.result.value = .failure(error: KString.invalidEmail)
                     case .emailAlreadyInUse:
-                        self.result.value = .error(message: KString.duplicateEmail)
+                        self.result.value = .failure(error: KString.duplicateEmail)
                     case .operationNotAllowed:
-                        self.result.value = .error(message: KString.operationNotAllowed)
+                        self.result.value = .failure(error: KString.operationNotAllowed)
                     case .weakPassword:
-                        self.result.value = .error(message: KString.weakPassword)
+                        self.result.value = .failure(error: KString.weakPassword)
                     default:
-                        self.result.value = .error(message: KString.unknownError)
+                        self.result.value = .failure(error: KString.unknownError)
                     }
                 } else {
                     self.checkUser()
@@ -76,7 +76,7 @@ class SignUpViewModel {
             if let user = user {
                 self.retrieveToken(of: user)
             } else {
-                self.result.value = .error(message: KString.userNotLoggedIn)
+                self.result.value = .failure(error: KString.userNotLoggedIn)
             }
             self.removeListener()
         }
@@ -89,7 +89,7 @@ class SignUpViewModel {
                 self.saveToken(token)
                 self.result.value = .success(result: user)
             } else {
-                self.result.value = .error(message: KString.tokenError)
+                self.result.value = .failure(error: KString.tokenError)
             }
         }
     }
