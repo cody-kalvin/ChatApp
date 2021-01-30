@@ -27,7 +27,7 @@ extension SignUpViewController {
         view.addSubview(scrollView)
 
         scrollView.snp.makeConstraints { (make) in
-            make.top.left.right.equalTo(view)
+            make.top.left.right.equalTo(view.safeAreaLayoutGuide)
             make.bottom.greaterThanOrEqualTo(view)
         }
     }
@@ -36,7 +36,7 @@ extension SignUpViewController {
         scrollView.addSubview(contentView)
 
         contentView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(view)
+            make.left.right.equalTo(view.safeAreaLayoutGuide)
             make.top.bottom.equalTo(scrollView)
         }
     }
